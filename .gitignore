@@ -1,0 +1,4 @@
+/.idea/
+/redis-springboot-test/target/
+/redis-spring-boot-starter/target/
+/redis-spring-boot-autoconfigure/target/

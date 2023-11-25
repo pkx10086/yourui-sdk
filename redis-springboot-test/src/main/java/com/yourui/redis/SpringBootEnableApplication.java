@@ -11,6 +11,8 @@ public class SpringBootEnableApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(SpringBootEnableApplication.class, args);
         Jedis jedis = (Jedis) context.getBean("jedis");
+        jedis.set("pankx", "value");
+        System.out.println( jedis.get("pankx"));
         System.out.println("jedis: "+jedis);
     }
 }
